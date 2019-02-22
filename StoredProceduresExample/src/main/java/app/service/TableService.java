@@ -14,22 +14,17 @@ import app.repository.PracticeRepository;
 @Service
 public class TableService {
 	
-	@Autowired
-	NameRepository nameRepository;
-	
-	@Autowired
-	NoteRepository noteRepository;
-	
-	@Autowired
-	PracticeRepository practiceRepository;
+//	@Autowired
+//	NameRepository nameRepository;
+//	
+//	@Autowired
+//	NoteRepository noteRepository;
+//	
+//	@Autowired
+//	PracticeRepository practiceRepository;
 	
 	public TableService() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public ResponseEntity<?> findAllFiltersName(){
-		
-		List<LastName> lastName = nameRepository.findAll();
-		return ResponseEntity.ok(lastName);
-	}
 }
